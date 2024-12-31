@@ -53,7 +53,7 @@ interface Params{
 
 const Blog = ({params}:{params:Params}) => {
   const {id} = params;
-  const blogItem = blog.find((b:any) => b.id === id);
+  const blogItem = blog.find((b) => b.id === id);
   console.log(blogItem);
 
   if (!blogItem) {
