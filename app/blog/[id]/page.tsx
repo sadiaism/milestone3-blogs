@@ -46,16 +46,19 @@ const blog=[
   description:"An interior makeup vanity blog is a delightful space to explore ideas for designing and organizing makeup vanities that blend functionality with elegance. It focuses on creating beautiful and practical areas for beauty routines while enhancing the overall decor of a room.Explore diverse styles like classic Hollywood glam, minimalist modern, vintage charm, or contemporary chic.Showcase trending vanity designs with unique materials and finishes.Discuss the importance of proper lighting for makeup application, including natural light, LED mirrors, and adjustable lighting solutions.Highlight smart storage ideas like drawers, organizers, shelves, and hidden compartments for makeup, skincare, and accessories.Share tips for decluttering and maintaining an organized vanity.Suggestions for color palettes that create a relaxing and inspiring vanity area.Adding decorative touches like flowers, artwork, rugs, and personalized elements.",
   price:"$120",
 }
-]
+];
+interface Params{
+  id:string
+}
 
-const Blog = ({params}:any) => {
+const Blog = ({params}:{params:Params}) => {
   const {id} = params;
-  const blogItem = blog.find((b:any) => b.id === (id));
-  console.log(blog);
+  const blogItem = blog.find((b:any) => b.id === id);
+  console.log(blogItem);
 
   if (!blogItem) {
     return(
-      <h2>id:</h2>
+      <h2>Blog not found</h2>
     )
   }
  
