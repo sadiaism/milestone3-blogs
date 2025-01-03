@@ -12,11 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      screens:{
-        sm:{
-          max:"600px",
-        }
-      }
+      // screens:{
+      //   sm:{
+      //     max:"600px",
+      //   }
+      // }
     },
   },
   plugins: [],

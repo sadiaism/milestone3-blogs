@@ -1,10 +1,12 @@
+
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const page = () => {
   return (
-    <div className='grid grid-cols-3 sm:grid-cols-1 gap-[24px] mb-[24px] mt-[24px]'>
+    <div className='grid grid-cols-1 md:grid-cols-3 gap-[24px] pb-[24px] pt-[24px] bg-slate-300'>
         {/* 1st col */}
         <div className='flex flex-col gap-[24px] justify-center items-center'>
             <Image 
@@ -16,7 +18,7 @@ const page = () => {
             <h1>The interior Hall</h1>
            <h2 className='text-center'>An interior hall is a versatile and significant space in any building, typically serving as a central area that connects various rooms or sections.....</h2>
 
-           <button className='w-[300px] h-[60px] bg-[#000000] text-[#FFFFFF] p-[12px] rounded-2xl hover:bg-slate-500'>View More</button>
+          <Link href={"/blog/1"}><button className='w-[300px] h-[60px] bg-[#000000] text-[#FFFFFF] p-[12px] rounded-2xl hover:bg-slate-500'>View More</button></Link>
         </div>
 
         {/* 2nd col */}
